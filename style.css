@@ -1,0 +1,43 @@
+@font-face {
+    font-family: shabnam;
+    src: url(Assets/Fonts/Shabnam-Bold.ttf);
+    
+  }
+  
+  * {
+    font-family: shabnam;
+  }
+body{
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.right-side{
+    width: 45vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right-side .top-voroud{
+    width: 60%;
+    height: 20%;
+    margin-top: 15%;
+    background-color: gainsboro;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right-side .login-text{
+    width: 60%;
+    height: 50%;
+    background-color: greenyellow;
+}
+
+.left-side{
+    width: 55vw;
+    height: 100vh;
+    background-color: teal;
+}
