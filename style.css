@@ -1,9 +1,17 @@
 @font-face {
     font-family: shabnam;
     src: url(Assets/Fonts/Shabnam-Bold.ttf);
-    
+    src: url(Assets/Fonts/Shabnam-Light.ttf);
+    src: url(Assets/Fonts/Shabnam.eot);
+    src: url(Assets/Fonts/Shabnam.ttf);
+    src: url(Assets/Fonts/Shabnam.woff);
   }
-  
+  @font-face {
+    font-family: Comfortaa;
+    src: url(Assets/Fonts/Comfortaa-Bold.ttf);
+    src: url(Assets/Fonts/Comfortaa-Light.ttf);
+    src: url(Assets/Fonts/Comfortaa-Regular.ttf);
+  }
   * {
     font-family: shabnam;
   }
@@ -21,21 +29,165 @@ body{
     flex-direction: column;
     align-items: center;
 }
+#size{
+    font-weight: 900;
+    color: rgb(0, 150, 250);
+}
 .right-side .top-voroud{
     width: 60%;
     height: 20%;
-    margin-top: 15%;
-    background-color: gainsboro;
+    margin-top: 10%;
+    /* background-color: gainsboro; */
     display: flex;
     justify-content: flex-end;
 }
-
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color: blue;
+}
 .right-side .login-text{
     width: 60%;
     height: 50%;
-    background-color: greenyellow;
+    /* background-color: rgb(213, 252, 156); */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+p{
+    margin-top: 0px;
+}
+.font-size1{
+    font-size: 22px;
+    color: rgb(50, 50, 50);
+}
+.font-size2{
+    font-size: 15px;
+    color: rgb(150, 150, 150);
+}
+.right-side .login-text .user-pas1{
+    width: 100%;
+    height: 15%;
+    border-bottom: 1.5px solid rgb(0, 150, 250);
+    /* background-color: seashell; */
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.right-side .login-text .username{
+    display: block;
+    width: 95%;
+    height: 50%;
+    direction: rtl;
+    background-color: transparent;
+    border: none;
+}
+.username::placeholder{
+    color: rgb(0, 150, 250);
+}
+.right-side .login-text .icon1{
+    width: 5%;
+    height: 50%;
+    color: rgb(0, 150, 250);
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+}
+.right-side .login-text .icon2{
+    width: 5%;
+    height: 50%;
+    color: rgb(150, 150, 150);
+    /* background-color: royalblue; */
+    display: flex;
+    align-items: center;
+}
+.right-side .login-text .user-pas2{
+    width: 100%;
+    height: 15%;
+    border-bottom: 1.5px solid rgb(150, 150, 150);
+    /* background-color: seashell; */
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.right-side .login-text .user-pas2 .password{
+    color: rgb(199, 25, 25);
+    display: block;
+    width: 95%;
+    height: 50%;
+    direction: rtl;
+    background-color: transparent;
+    border: none;
+}
+.right-side .login-text .security-code{
+    width: 100%;
+    height: 15%;
+    /* background-color: salmon; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+    /* align-items: flex-end; */
+}
+.right-side .login-text .security-code .right{
+    width: 55%;
+    height: 50%;
+    border-bottom: 1.5px solid rgb(150, 150, 150);
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.right-side .login-text .security-code .right .sec-code{
+    color: white;
+    display: block;
+    width: 95%;
+    height: 100%;
+    direction: rtl;
+    background-color: transparent;
+    border: none;
+}
+.right-side .login-text .security-code .right .icon{
+    width: 5%;
+    height: 50%;
+    color: rgb(150, 150, 150);
+    /* background-color: royalblue; */
+    display: flex;
+    align-items: center;
+}
+.right-side .login-text .security-code .left{
+    width: 30%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    /* background-color: brown; */
 }
 
+.right-side .login-text .login{
+    width: 100%;
+    height: 12%;
+    background-color: rgb(0, 150, 250);
+    color: white;
+    display: block;
+    font-size: 17px;
+    border-radius: 5px;
+    margin-top: 10%;
+    border: 1px solid rgb(0, 150, 250);
+}
+
+.right-side .login-text .checkbox{
+    direction: rtl;
+    margin-top: 3%;
+    font-size: 12px;
+    color: rgb(150, 150, 150);
+    display: flex;
+    align-items: center;
+}
 .left-side{
     width: 55vw;
     height: 100vh;

@@ -10,6 +10,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./fontawesome/css/all.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -20,9 +22,36 @@
         </div>
         <div class="right-side">
             <div class="top-voroud">
+                <a href="#" id="size"><span>ورود</span></a>
             </div>
             <div class="login-text">
-
+                <p class="font-size1">ورود به حساب کاربری</p>
+                <p class="font-size2">جهت ورود به برنامه نام کاربری و رمز عبور خود را وارد نمایید</p>
+                <div class="user-pas1">
+                    <input class="username" type="text" placeholder="mehran.assari@yahoo.com">
+                    <i class="fas fa-user icon1"></i>
+                </div>
+                <div class="user-pas2">
+                    <input class="password" type="text" placeholder="رمز عبور">
+                    <i class="fas fa-lock icon2"></i><br>
+                </div>
+                
+                <div class="security-code">
+                    <div class="left">
+                        <i class="fal fa-refresh fa-xs"></i>
+                        <img src="./code.JPG" alt="code">
+                    </div>
+                    <div class="right">
+                        <input class="sec-code" type="text" placeholder="کد امنیتی">
+                        <i class="fas fa-bars icon"></i>
+                    </div>
+                </div>
+                <button class="login" type="button">ورود</button>
+                <label class="checkbox">
+                    <input type="checkbox" name="personality" checked>
+                    مرابه خاطر بسپار
+                    <span class="checkmark"></span>
+                </label>
             </div>
         </div>
         <script src="" async defer></script>
