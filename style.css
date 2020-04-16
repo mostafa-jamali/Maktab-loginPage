@@ -17,13 +17,13 @@
   }
 body{
     margin: 0px;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
 }
 .right-side{
-    width: 45vw;
-    height: 100vh;
+    width: 45%;
+    height: 100%;
     background-color: white;
     z-index: 10;
     display: flex;
@@ -195,28 +195,36 @@ p{
     align-items: center;
 }
 .left-side{
-    width: 55vw;
-    height: 100vh;
+    width: 55%;
+    height: 100%;
     background-color: rgb(150, 240, 220);
     background-image: linear-gradient(to bottom left, rgb(150, 240, 220) ,rgb(40, 190, 240));
     z-index: 2;
     overflow: hidden;
-    /* background-image: url(./Assets/PNG/Logo.png); */
     display: flex;
     align-items: center;
     justify-content: flex-end;
     flex-direction: column;
 }
+.left-side .logo-text{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
 .left-side .logo-img{
-    width: 20%;
+    width: 100px;
     height: auto;
+    margin-bottom: 32%;
 }
 .left-side p{
-    margin-top: 27%;
+    margin-bottom: 10px;
     font-family: Comfortaa;
     color: white;
 }
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 768px) {
     body{
         margin: 0px;
         width: 100%;
@@ -225,10 +233,17 @@ p{
         flex-direction: column-reverse;
     }
     .right-side{
-        width: 100vw;
+        width: 100%;
+        height: 600px;
     }
     .left-side{
-        width: 100vw;
+        width: 100%;
+        height: 600px;
+    }
+    .left-side .logo-img{
+        width: 100px;
+        height: auto;
+        margin-bottom: 32%;
     }
 }
 
@@ -238,7 +253,7 @@ p{
     overflow: hidden;
     width:100%;
     height:100%;
-    background-size: 100% 100%;
+    /* background-size: 100% 100%; */
     /* background-image: url(./Assets/PNG/Logo.png); */
     /* border-radius:3px; */
     /* box-shadow:0 1px 1px 0 rgba(0,0,0,0.4), 0 0 4px 1px rgba(0,0,0,0.2), inset 0 1px 1px 0 rgba(255,255,255,0.2), inset 0 2px 4px 1px rgba(255,255,255,0.1); */
